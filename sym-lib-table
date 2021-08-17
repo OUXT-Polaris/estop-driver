@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name MechRelay)(type Legacy)(uri ${KICAD_USER_SYMBOL}/MechRelay.lib)(options "")(descr ""))
+  (lib (name SuperRegulator)(type Legacy)(uri ${KICAD_USER_SYMBOL}/SuperRegulator.lib)(options "")(descr ""))
+)

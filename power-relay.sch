@@ -1,0 +1,341 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4450 4000 0    50   Input ~ 0
+relay_in
+Wire Wire Line
+	5000 4000 5000 4100
+Connection ~ 5000 4000
+Wire Wire Line
+	5000 3900 5000 4000
+Connection ~ 4600 4000
+Wire Wire Line
+	6000 2100 6500 2100
+Connection ~ 6500 2900
+Wire Wire Line
+	4600 4000 4600 4300
+Wire Wire Line
+	4450 4000 4600 4000
+Wire Wire Line
+	4600 4300 4700 4300
+Wire Wire Line
+	4600 3700 4600 4000
+Wire Wire Line
+	4700 3700 4600 3700
+Wire Wire Line
+	5000 3400 5000 3500
+$Comp
+L power:VCC #PWR?
+U 1 1 61738FEC
+P 5000 3400
+AR Path="/61738FEC" Ref="#PWR?"  Part="1" 
+AR Path="/6172EFDE/61738FEC" Ref="#PWR?"  Part="1" 
+AR Path="/61774299/61738FEC" Ref="#PWR026"  Part="1" 
+AR Path="/61781F94/61738FEC" Ref="#PWR033"  Part="1" 
+AR Path="/6186E17D/61738FEC" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 5000 3250 50  0001 C CNN
+F 1 "VCC" H 5015 3573 50  0000 C CNN
+F 2 "" H 5000 3400 50  0001 C CNN
+F 3 "" H 5000 3400 50  0001 C CNN
+	1    5000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4500 5000 4600
+$Comp
+L power:GND #PWR?
+U 1 1 61738FE5
+P 5000 4600
+AR Path="/61738FE5" Ref="#PWR?"  Part="1" 
+AR Path="/6172EFDE/61738FE5" Ref="#PWR?"  Part="1" 
+AR Path="/61774299/61738FE5" Ref="#PWR027"  Part="1" 
+AR Path="/61781F94/61738FE5" Ref="#PWR034"  Part="1" 
+AR Path="/6186E17D/61738FE5" Ref="#PWR041"  Part="1" 
+F 0 "#PWR041" H 5000 4350 50  0001 C CNN
+F 1 "GND" H 5005 4427 50  0000 C CNN
+F 2 "" H 5000 4600 50  0001 C CNN
+F 3 "" H 5000 4600 50  0001 C CNN
+	1    5000 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4000 5400 4000
+$Comp
+L Transistor_BJT:BC807 Q?
+U 1 1 61738FDE
+P 4900 4300
+AR Path="/61738FDE" Ref="Q?"  Part="1" 
+AR Path="/6172EFDE/61738FDE" Ref="Q?"  Part="1" 
+AR Path="/61774299/61738FDE" Ref="Q7"  Part="1" 
+AR Path="/61781F94/61738FDE" Ref="Q10"  Part="1" 
+AR Path="/6186E17D/61738FDE" Ref="Q13"  Part="1" 
+F 0 "Q13" H 5091 4254 50  0000 L CNN
+F 1 "BC807" H 5091 4345 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5100 4225 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC808-D.pdf" H 4900 4300 50  0001 L CNN
+	1    4900 4300
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC817 Q?
+U 1 1 61738FD8
+P 4900 3700
+AR Path="/61738FD8" Ref="Q?"  Part="1" 
+AR Path="/6172EFDE/61738FD8" Ref="Q?"  Part="1" 
+AR Path="/61774299/61738FD8" Ref="Q6"  Part="1" 
+AR Path="/61781F94/61738FD8" Ref="Q9"  Part="1" 
+AR Path="/6186E17D/61738FD8" Ref="Q12"  Part="1" 
+F 0 "Q12" H 5091 3746 50  0000 L CNN
+F 1 "BC817" H 5091 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5100 3625 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H 4900 3700 50  0001 L CNN
+	1    4900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MechRelay:G7EB K?
+U 1 1 61738FD2
+P 6700 3300
+AR Path="/61738FD2" Ref="K?"  Part="1" 
+AR Path="/6172EFDE/61738FD2" Ref="K?"  Part="1" 
+AR Path="/61774299/61738FD2" Ref="K1"  Part="1" 
+AR Path="/61781F94/61738FD2" Ref="K2"  Part="1" 
+AR Path="/6186E17D/61738FD2" Ref="K3"  Part="1" 
+F 0 "K3" H 7030 3346 50  0000 L CNN
+F 1 "G7EB" H 7030 3255 50  0000 L CNN
+F 2 "" H 7050 3250 50  0001 L CNN
+F 3 "https://www.fa.omron.co.jp/data_pdf/cat/g7eb_ds_j_1_7.pdf" H 6700 3300 50  0001 C CNN
+	1    6700 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 61738FCC
+P 6000 3300
+AR Path="/61738FCC" Ref="D?"  Part="1" 
+AR Path="/6172EFDE/61738FCC" Ref="D?"  Part="1" 
+AR Path="/61774299/61738FCC" Ref="D8"  Part="1" 
+AR Path="/61781F94/61738FCC" Ref="D10"  Part="1" 
+AR Path="/6186E17D/61738FCC" Ref="D12"  Part="1" 
+F 0 "D12" V 5954 3380 50  0000 L CNN
+F 1 "D" V 6045 3380 50  0000 L CNN
+F 2 "" H 6000 3300 50  0001 C CNN
+F 3 "~" H 6000 3300 50  0001 C CNN
+	1    6000 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 61738FC6
+P 6400 4000
+AR Path="/61738FC6" Ref="Q?"  Part="1" 
+AR Path="/6172EFDE/61738FC6" Ref="Q?"  Part="1" 
+AR Path="/61774299/61738FC6" Ref="Q8"  Part="1" 
+AR Path="/61781F94/61738FC6" Ref="Q11"  Part="1" 
+AR Path="/6186E17D/61738FC6" Ref="Q14"  Part="1" 
+F 0 "Q14" H 6604 4046 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 6604 3955 50  0000 L CNN
+F 2 "" H 6600 4100 50  0001 C CNN
+F 3 "~" H 6400 4000 50  0001 C CNN
+	1    6400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3150 6000 2900
+Wire Wire Line
+	6000 2900 6500 2900
+Wire Wire Line
+	6000 3450 6000 3700
+Wire Wire Line
+	6000 3700 6500 3700
+$Comp
+L power:GND #PWR?
+U 1 1 61738FBC
+P 6500 4500
+AR Path="/61738FBC" Ref="#PWR?"  Part="1" 
+AR Path="/6172EFDE/61738FBC" Ref="#PWR?"  Part="1" 
+AR Path="/61774299/61738FBC" Ref="#PWR032"  Part="1" 
+AR Path="/61781F94/61738FBC" Ref="#PWR039"  Part="1" 
+AR Path="/6186E17D/61738FBC" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 6500 4250 50  0001 C CNN
+F 1 "GND" H 6505 4327 50  0000 C CNN
+F 2 "" H 6500 4500 50  0001 C CNN
+F 3 "" H 6500 4500 50  0001 C CNN
+	1    6500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61738FB6
+P 5800 4250
+AR Path="/61738FB6" Ref="R?"  Part="1" 
+AR Path="/6172EFDE/61738FB6" Ref="R?"  Part="1" 
+AR Path="/61774299/61738FB6" Ref="R21"  Part="1" 
+AR Path="/61781F94/61738FB6" Ref="R23"  Part="1" 
+AR Path="/6186E17D/61738FB6" Ref="R25"  Part="1" 
+F 0 "R25" H 5870 4296 50  0000 L CNN
+F 1 "R" H 5870 4205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5730 4250 50  0001 C CNN
+F 3 "~" H 5800 4250 50  0001 C CNN
+	1    5800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 61738FB0
+P 6100 4250
+AR Path="/61738FB0" Ref="D?"  Part="1" 
+AR Path="/6172EFDE/61738FB0" Ref="D?"  Part="1" 
+AR Path="/61774299/61738FB0" Ref="D9"  Part="1" 
+AR Path="/61781F94/61738FB0" Ref="D11"  Part="1" 
+AR Path="/6186E17D/61738FB0" Ref="D13"  Part="1" 
+F 0 "D13" V 6054 4330 50  0000 L CNN
+F 1 "D_TVS" V 6145 4330 50  0000 L CNN
+F 2 "" H 6100 4250 50  0001 C CNN
+F 3 "~" H 6100 4250 50  0001 C CNN
+	1    6100 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 4000 6100 4000
+Wire Wire Line
+	6100 4100 6100 4000
+Connection ~ 6100 4000
+Wire Wire Line
+	6100 4000 5800 4000
+Wire Wire Line
+	5800 4100 5800 4000
+Connection ~ 5800 4000
+Wire Wire Line
+	5800 4000 5700 4000
+Wire Wire Line
+	6500 4500 6500 4200
+Wire Wire Line
+	6100 4400 6100 4500
+Wire Wire Line
+	5800 4400 5800 4500
+$Comp
+L power:GND #PWR?
+U 1 1 61738FA0
+P 6100 4500
+AR Path="/61738FA0" Ref="#PWR?"  Part="1" 
+AR Path="/6172EFDE/61738FA0" Ref="#PWR?"  Part="1" 
+AR Path="/61774299/61738FA0" Ref="#PWR030"  Part="1" 
+AR Path="/61781F94/61738FA0" Ref="#PWR037"  Part="1" 
+AR Path="/6186E17D/61738FA0" Ref="#PWR044"  Part="1" 
+F 0 "#PWR044" H 6100 4250 50  0001 C CNN
+F 1 "GND" H 6105 4327 50  0000 C CNN
+F 2 "" H 6100 4500 50  0001 C CNN
+F 3 "" H 6100 4500 50  0001 C CNN
+	1    6100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61738F9A
+P 5800 4500
+AR Path="/61738F9A" Ref="#PWR?"  Part="1" 
+AR Path="/6172EFDE/61738F9A" Ref="#PWR?"  Part="1" 
+AR Path="/61774299/61738F9A" Ref="#PWR028"  Part="1" 
+AR Path="/61781F94/61738F9A" Ref="#PWR035"  Part="1" 
+AR Path="/6186E17D/61738F9A" Ref="#PWR042"  Part="1" 
+F 0 "#PWR042" H 5800 4250 50  0001 C CNN
+F 1 "GND" H 5805 4327 50  0000 C CNN
+F 2 "" H 5800 4500 50  0001 C CNN
+F 3 "" H 5800 4500 50  0001 C CNN
+	1    5800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61738F94
+P 5550 4000
+AR Path="/61738F94" Ref="R?"  Part="1" 
+AR Path="/6172EFDE/61738F94" Ref="R?"  Part="1" 
+AR Path="/61774299/61738F94" Ref="R20"  Part="1" 
+AR Path="/61781F94/61738F94" Ref="R22"  Part="1" 
+AR Path="/6186E17D/61738F94" Ref="R24"  Part="1" 
+F 0 "R24" V 5343 4000 50  0000 C CNN
+F 1 "R" V 5434 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" V 5480 4000 50  0001 C CNN
+F 3 "~" H 5550 4000 50  0001 C CNN
+	1    5550 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 61738F8E
+P 6000 2350
+AR Path="/61738F8E" Ref="C?"  Part="1" 
+AR Path="/6172EFDE/61738F8E" Ref="C?"  Part="1" 
+AR Path="/61774299/61738F8E" Ref="C9"  Part="1" 
+AR Path="/61781F94/61738F8E" Ref="C10"  Part="1" 
+AR Path="/6186E17D/61738F8E" Ref="C11"  Part="1" 
+F 0 "C11" H 6118 2396 50  0000 L CNN
+F 1 "100u" H 6118 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_8x5.4" H 6038 2200 50  0001 C CNN
+F 3 "~" H 6000 2350 50  0001 C CNN
+	1    6000 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2200 6000 2100
+$Comp
+L power:GND #PWR?
+U 1 1 61738F87
+P 6000 2600
+AR Path="/61738F87" Ref="#PWR?"  Part="1" 
+AR Path="/6172EFDE/61738F87" Ref="#PWR?"  Part="1" 
+AR Path="/61774299/61738F87" Ref="#PWR029"  Part="1" 
+AR Path="/61781F94/61738F87" Ref="#PWR036"  Part="1" 
+AR Path="/6186E17D/61738F87" Ref="#PWR043"  Part="1" 
+F 0 "#PWR043" H 6000 2350 50  0001 C CNN
+F 1 "GND" H 6005 2427 50  0000 C CNN
+F 2 "" H 6000 2600 50  0001 C CNN
+F 3 "" H 6000 2600 50  0001 C CNN
+	1    6000 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2600 6000 2500
+Wire Wire Line
+	6500 3600 6500 3700
+Connection ~ 6500 3700
+Wire Wire Line
+	6500 3700 6500 3800
+Wire Wire Line
+	6500 2900 6500 3000
+$Comp
+L power:+BATT #PWR?
+U 1 1 61738F7C
+P 6500 2000
+AR Path="/61738F7C" Ref="#PWR?"  Part="1" 
+AR Path="/6172EFDE/61738F7C" Ref="#PWR?"  Part="1" 
+AR Path="/61774299/61738F7C" Ref="#PWR031"  Part="1" 
+AR Path="/61781F94/61738F7C" Ref="#PWR038"  Part="1" 
+AR Path="/6186E17D/61738F7C" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 6500 1850 50  0001 C CNN
+F 1 "+BATT" H 6515 2173 50  0000 C CNN
+F 2 "" H 6500 2000 50  0001 C CNN
+F 3 "" H 6500 2000 50  0001 C CNN
+	1    6500 2000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 2100
+Wire Wire Line
+	6500 2100 6500 2900
+Wire Wire Line
+	6500 2000 6500 2100
+$EndSCHEMATC

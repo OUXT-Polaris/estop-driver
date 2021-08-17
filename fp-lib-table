@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name Connector)(type KiCad)(uri ${KICAD_USER_MOD}/Connector.pretty)(options "")(descr ""))
+  (lib (name Fuse)(type KiCad)(uri ${KICAD_USER_MOD}/Fuse.pretty)(options "")(descr ""))
+  (lib (name OptoDevice)(type KiCad)(uri ${KICAD_USER_MOD}/OptoDevice.pretty)(options "")(descr ""))
+  (lib (name SuperRegulator)(type KiCad)(uri ${KICAD_USER_MOD}/SuperRegulator.pretty)(options "")(descr ""))
+  (lib (name Terminal)(type KiCad)(uri ${KICAD_USER_MOD}/Terminal.pretty)(options "")(descr ""))
+)
